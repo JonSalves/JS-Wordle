@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle task</title>
+    <link rel="stylesheet" href="./task.css">
+    <script defer src="./task.js"></script>
+</head>
+
+<body class="body">
+    <h1 id="header">Welcome to Wordle</h1>
+    <form id="inputForm" class="form" autocomplete="off" style="padding-left: 42.5%;">
+<input type="text" id="guess" placeholder="Please enter your guess." maxlength="5" minlength="5">
+
+<input type="submit" id="submit" value="submit">
+</form>
+
+<h2 id="guesslist" class="guesslist"> 
+
+</h2>
+
+<button id="newword" style="margin-left: 42.5%;"> New Word</button>
+
+<h2 id="guessremaining" style="margin-left: 42.5%; color: yellow;" >Remaining Guesses</h2>
+
+<h2 id="streak" style="margin-left: 42.5%; color: yellow;">Streak!</h2>
+
+</body>
+</html> 
