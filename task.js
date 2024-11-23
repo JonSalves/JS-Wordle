@@ -2317,6 +2317,7 @@ words:[
 };
 
 // Variables
+
 let guess = document.getElementById("guess");
 let mainword = wordlist.words[Math.floor(Math.random() * 2316)];
 let submit = document.getElementById("submit");
@@ -2334,7 +2335,7 @@ let numberguess = 7;
 // Functions
 const process =() => {
     // Checks the guess with the mainword.
-    if (wordlist.words.includes(guess.value)){
+    if (wordlist.words.includes(guess.value.toLowerCase())){
 // Splits the guess into an array and checks every character with every character in mainword.
     for(let i = 0; i<5; i++){
         let guessarray = guess.value.split('')
@@ -2431,6 +2432,6 @@ process();
 outputstreak();
 guessleft();
 newline();
-
+guess.value="";
 }) 
 
